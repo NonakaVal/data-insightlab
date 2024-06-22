@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+/* Estilos gerais */
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 17%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+}
+
+/* Cabeçalho */
+header {
+    padding: 10px;
+    position: fixed;
+    top: 8%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.9); /* Cor preta com 70% de transparência */
+    transition: top 1s;
+    border: 1px solid #2b2626;
+    border-radius: 5px;
+}
+
+header.hidden {
+    top: -150px;
+}
+
+/* Barra de navegação */
+nav {
+    text-align: center;
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 18px;
+}
+
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0%;
+}
+
+nav ul li {
+    display: inline;
+    margin: 0 40px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+    text-decoration-thickness: 0.1px;
+}
+
+/* Conteúdo principal */
+main {
+    flex: 1;
+}
+
+.container {
+    position: relative;
+    text-align: center;
+    margin: 0 10px 25%;
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-optical-sizing: auto;
+    padding: 5%;
+    border: 1px solid #2b2626;
+    border-radius: 5px;
+}
+
+.titulo {
+    font-size: 42px;
+    color: #ffffff;
+
+    margin-bottom: 40px;
+    animation: fade-in 1s ease-out;
+    text-align: center;
+}
+
+.subtitulo {
+    font-size: 24px;
+    color: #e9e6e6;
+    margin-top: 20px;
+    animation: slide-in 1.5s ease-out;
+    text-align: left;
+    text-indent: 0px;
+}
+
+.separador {
+    width: 40%;
+    height: 2px;
+    background-color: #ccc;
+    margin: 30px auto;
+    display: flex;
+}
+
+.container.diagonal-div {
+    overflow: hidden;
+}
+
+.container.diagonal-div::before,
+.container.diagonal-div::after {
+    content: '';
+    position: absolute;
+    width: 0; /* Ajuste conforme necessário para garantir cobertura diagonal */
+    height: 2px; /* Define a grossura da linha diagonal */
+    background-color: #333; /* Cor da linha diagonal */
+    top: 5%; /* Posiciona as linhas no centro vertical */
+}
+
+.container.diagonal-div::before {
+    left: 0; /* Posiciona a linha diagonal esquerda */
+    transform: rotate(-45deg); /* Rotaciona a linha diagonal */
+}
+
+.container.diagonal-div::after {
+    right: 0; /* Posiciona a linha diagonal direita */
+    transform: rotate(45deg); /* Rotaciona a linha diagonal */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+/* Footer */
+footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-top: 5%;
+}
+
+footer a {
+    margin-right: 10px;
+}
+
+footer a:last-child {
+    margin-right: 0;
+}
+
+footer img {
+    transition: transform 0.2s ease-in-out;
+    width: 40px;
+    height: 40px;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+footer p {
+    margin-top: 15%;
+}
+
+/* Estilos para dispositivos móveis */
+@media screen and (max-width: 700px) {
+    body {
+        margin: -25px;
+        padding: 28%;
+        display: flex;
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+        font-size: 16px;
+        margin-left: -15%;
+    }
+
+    nav ul {
+        margin: 0;
+        padding: 0;
+        list-style-type: none; /* Remover os marcadores de lista */
+    }
+
+    nav ul li {
+        margin: 6px 0;
+        display: block; /* Exibir itens em bloco */
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        text-shadow: -1px -1px 0 black, 2px -1px 0 black, -1px 1px 0 black, 3px 1px 0 black;
+        font-family: "Montserrat", sans-serif;
+        font-optical-sizing: auto;
+        font-weight: 600;
+        font-style: normal;
+    }
+
+    .container {
+        padding: 4%;
+        margin-top: 38%;
+    }
+
+    .titulo {
+        font-size: 24px;
+    }
+
+    .subtitulo {
+        font-size: 18px;
+    }
+
+    footer img {
+        width: 30px;
+        height: 30px;
+    }
+}

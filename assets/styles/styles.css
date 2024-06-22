@@ -1,0 +1,260 @@
+/* assets/styles.css */
+
+/* Importando a fonte Montaga do Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montaga&display=swap');
+
+/* Reset básico e estilos globais */
+body {
+    background-color: #000000; /* Fundo ainda mais escuro */
+    color: #E0E0E0; /* Texto principal em branco acinzentado */
+    margin: 0;
+    padding: 20px;
+    font-family: "Montaga", serif;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.6;
+}
+
+/* Logo */
+.logo-container {
+    text-align: center;
+    margin-bottom: -4%;
+    margin-top: 15%;
+}
+
+.logo-img {
+    width: 170px; /* Ajuste o tamanho conforme necessário */
+    height: auto;
+}
+
+/* Títulos e conteúdo */
+.main-title {
+    font-size: 36px;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #086eba; /* Título em azul */
+ 
+}
+
+.section-title {
+    font-size: 24px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    color: #ffffff; /* Subtítulo em azul */
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.content-section {
+    max-width: 1070px; /* Limita a largura do conteúdo para melhor legibilidade */
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+    padding: 0 10px;
+    text-align: center;
+}
+
+.content-section p {
+    font-size: 22px;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #e4e2e2; /* Texto acinzentado */
+    text-align: left;
+}
+
+/* Separador */
+.separator {
+    width: 150%;
+    height: 3px;
+    background-color: #333333; /* Linha separadora em cinza escuro */
+    margin: 25px 0;
+}
+
+/* Barra de navegação */
+nav {
+    text-align: center;
+    background-color: #000000; /* Fundo da barra de navegação */
+    padding: 20px 0;
+    margin-bottom: 2%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    
+}
+
+nav ul li a:hover {
+    background-color: #086eba; /* Cor de fundo ao passar o mouse */
+}
+
+/* Conteúdo com imagem */
+.container {
+    max-width: 1080px; /* Limita a largura do contêiner principal */
+    margin: 0 auto;
+    padding: 25px;
+    border-radius: 10px;
+    background-color: #141414; /* Fundo escuro */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    color: #E0E0E0; /* Texto em branco acinzentado */
+}
+
+.container, .p {
+    font-size: 22px;
+}
+
+.profile-img {
+    border-radius: 5%;
+    width: 150px;
+    height: 150px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #086eba; /* Borda em cinza escuro */
+}
+
+.menu {
+    margin-top: 2%;
+
+    width: 15px;
+    height: 15px;
+
+}
+
+.pic {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.introduction {
+    font-size: 22px;
+
+    margin-bottom: 20px;
+    color: #e4e2e2; /* Texto em branco */
+}
+
+.skills-section {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.skill-list {
+    padding: 20px;
+    border-radius: 5px;
+    background-color: #1F1F1F; /* Fundo das listas em cinza escuro */
+    border: 1px solid #333333; /* Borda em cinza escuro */
+    color: #B0B0B0; /* Texto em cinza claro */
+}
+
+.skill-list h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    margin-top: -2%;
+    color: #ffffff; /* Título das listas em azul */
+}
+
+.skill-list ul {
+    padding: 9px;
+    margin: 0;
+}
+
+.skill-list ul li {
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 8px;
+    color: #e4e2e2;
+}
+
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000000; /* Fundo escuro para o rodapé */
+    color: #B0B0B0; /* Texto em cinza claro */
+}
+
+footer div {
+    margin-bottom: 10px;
+}
+
+footer img {
+    width: 40px;
+    height: 40px;
+    margin: 0 10px;
+    transition: transform 0.2s ease-in-out;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+/* Media Query para dispositivos móveis */
+@media screen and (max-width: 768px) {
+    
+    .main-title {
+        font-size: 32px;
+    }
+
+    .section-title {
+        font-size: 24px;
+    }
+
+    .content-section {
+        padding: 0 10px;
+    }
+
+    nav {
+        width: 200px;
+        margin: 0 auto;
+        
+        
+    }
+    
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    
+    nav ul li {
+        margin: 1px 0;
+        
+    }
+    
+
+    
+
+    .container {
+        padding: 15px;
+    }
+
+    .profile-img {
+        width: 150px;
+        height: 150px;
+    }
+
+    .skills-section {
+        grid-template-columns: 1fr;
+    }
+}

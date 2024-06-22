@@ -1,0 +1,224 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Sedan+SC&display=swap');
+
+body {
+    background-color: #000;
+    color: #fff;
+    margin: 0;
+    padding: 20%;
+    display: flex;
+    flex-direction: column;
+}
+
+.top {
+    display: flex;
+    justify-content: center;
+}
+
+/* Cabeçalho */
+header {
+    padding: 15px;
+    position: fixed;
+    top: 8%;
+    z-index: 100;
+    background-color: rgba(0, 0, 0, 0.9); /* Cor preta com 70% de transparência */
+    transition: top 1s;
+    border: 1px solid #2b2626;
+    border-radius: 10px;
+}
+
+header.hidden {
+    top: -150px;
+}
+
+/* Barra de navegação */
+nav {
+    text-align: center;
+    background-color: #000000; /* Fundo da barra de navegação */
+    padding: 20px 0;
+    margin-bottom: 1%;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    display: inline-block;
+    margin-right: 20px;
+    
+}
+
+nav ul li a {
+    color: #FFFFFF;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding: 10px 5px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+    
+}
+
+nav ul li a:hover {
+    background-color: #086eba; /* Cor de fundo ao passar o mouse */
+}
+
+.hidden {
+    margin-bottom: 10%;
+    margin-top: -8%;
+}
+
+.titulo {
+    font-size: 20px;
+    color: #ffffff;
+    margin-top: 5%;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    animation: fade-in 1.5s ease-out;
+}
+
+.conteudo {
+    flex: 1; /* Ocupa todo o espaço restante */
+    margin-left: 2%;
+}
+
+.container {
+    position: relative;
+    display: flex;
+    align-items: flex-start; /* Centraliza verticalmente */
+    font-family: "Montserrat", sans-serif;
+    padding: 10px;
+    border: 1px solid #2b2626;
+    border-radius: 10px;
+    margin-top: -5%;
+}
+
+.imagem-lateral {
+    flex: 0 0 auto; /* Largura fixa para a imagem */
+    margin-right: 10px; /* Espaço entre a imagem e o conteúdo */
+}
+
+.introducao {
+    text-align: left;
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    font-size: 15px;
+    font-weight: 700;
+    margin-top: -50%;
+    margin-bottom: -2%;
+}
+
+.introducao p {
+    margin-top: 10px; /* Espaço entre o título e a descrição */
+    font-size: 18px;
+}
+
+.profile-img {
+    border-radius: 0%;
+    width: 350px;
+    height: 175px;
+    object-fit: cover;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border: 3px solid #ccc;
+}
+
+/* Efeito de hover para aumentar um pouco o tamanho e a sombra */
+.profile-img:hover {
+    transform: scale(1.05); /* Aumenta um pouco o tamanho */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Aumenta a intensidade da sombra */
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slide-in {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.prox {
+    opacity: 0.3; /* Define a opacidade da imagem como 50% */
+}
+
+/* Footer */
+footer {
+    color: white;
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 0%;
+    margin-top: 5%;
+}
+
+footer a {
+    margin-right: 10px;
+}
+
+footer a:last-child {
+    margin-right: 0;
+}
+
+footer img {
+    transition: transform 0.2s ease-in-out;
+    width: 40px;
+    height: 40px;
+}
+
+footer img:hover {
+    transform: scale(1.2);
+}
+
+/* Media Query para telas menores */
+@media (max-width: 768px) {
+    body {
+        padding: 10%;
+        margin-top: 80%;
+    }
+
+
+
+    nav ul li {
+        display: block;
+        margin-bottom: 10px;
+    }
+
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .imagem-lateral {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .profile-img {
+        width: 100%;
+        height: auto;
+    }
+
+    .introducao {
+        text-align: center;
+        margin-top: 0;
+        margin-bottom: 20px;
+    }
+
+    .conteudo {
+        margin-left: 0;
+    }
+}
