@@ -183,6 +183,8 @@ footer img:hover {
     transform: scale(1.2);
 }
 
+
+
 /* Media Query para telas menores */
 @media (max-width: 768px) {
     body {
@@ -190,16 +192,32 @@ footer img:hover {
         margin-top: 80%;
     }
 
-
+    .hidden {
+        margin-bottom: 10%;
+        margin-top: -18%;
+    }
 
     nav ul li {
         display: block;
-        margin-bottom: 10px;
+        margin-bottom: 5px;
+        
+    }
+    
+    nav ul li a {
+       
+        font-size: 16px;
+        font-weight: 600;
+    
+    }
+
+    .titulo {
+        font-size: 18px;
     }
 
     .container {
         flex-direction: column;
         align-items: center;
+        margin-bottom: 25%;
     }
 
     .imagem-lateral {
