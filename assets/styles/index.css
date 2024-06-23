@@ -257,11 +257,16 @@ footer img:hover {
     }
 
     .content, .p{
-        font-size: 17px;
+        font-size: 18px;
     }
     
     .education-list , .li{
-        font-size: 20px;
+        font-size: 16px;
+    }
+
+    .skill-list ul li {
+        font-size: 16px;
+ 
     }
 
     nav {
