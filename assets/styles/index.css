@@ -29,7 +29,7 @@ body {
 
 /* Títulos e conteúdo */
 .main-title {
-    font-size: 38px;
+    font-size: 36px;
     text-align: center;
     margin-top: 20px;
     margin-bottom: 20px;
@@ -39,7 +39,7 @@ body {
 }
 
 .section-title {
-    font-size: 20px;
+    font-size: 30px;
     margin-top: 20px;
     margin-bottom: 20px;
     letter-spacing: 2px;
@@ -58,7 +58,7 @@ body {
 }
 
 .content-section p {
-    font-size: 20px;
+    font-size: 18px;
     line-height: 1.8;
     margin-bottom: 15px;
     color: #e4e2e2; /* Texto acinzentado */
@@ -97,7 +97,7 @@ nav ul li {
 nav ul li a {
     color: #FFFFFF;
     text-decoration: none;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
     text-transform: uppercase;
     padding: 10px 5px;
@@ -122,7 +122,7 @@ nav ul li a:hover {
 }
 
 .container, .p {
-    font-size: 20px;
+    font-size:18px;
 }
 
 .profile-img {
@@ -150,10 +150,16 @@ nav ul li a:hover {
 
 
 .introduction {
-    font-size: 20px;
 
     margin-bottom: 20px;
     color: #e4e2e2; /* Texto em branco */
+}
+.introduction  .h2{
+    font-size: 30px;
+}
+
+.introduction .p {
+    font-size: 18px;
 }
 
 .skills-section {
@@ -172,7 +178,7 @@ nav ul li a:hover {
 }
 
 .skill-list h3 {
-    font-size: 20px;
+    font-size: 24px;
     margin-bottom: 10px;
     margin-top: -2%;
     color: #ffffff; /* Título das listas em azul */
@@ -184,7 +190,7 @@ nav ul li a:hover {
 }
 
 .skill-list ul li {
-    font-size: 18px;
+    font-size: 16px;
     line-height: 1.6;
     margin-bottom: 8px;
     color: #e4e2e2;
@@ -219,7 +225,7 @@ footer img:hover {
 
     nav ul li a {
         
-        font-size: 16px;
+        font-size: 18px;
         font-weight: 500;
   
         
@@ -230,7 +236,7 @@ footer img:hover {
     }
 
     .content-section p {
-    font-size: 16px;
+    font-size: 18px;
     line-height: 1.8;
     margin-bottom: 15px;
     color: #e4e2e2; /* Texto acinzentado */
@@ -238,7 +244,7 @@ footer img:hover {
 }
 
     .section-title {
-        font-size: 20px;
+        font-size: 28px;
     }
 
     .content-section {
@@ -246,18 +252,18 @@ footer img:hover {
     }
 
     .content-section p {
-        font-size: 18px;
+        font-size: 20px;
       
     }
 
     .introduction {
-        font-size: 18px;
+        font-size: 20px;
     
        
     }
 
     .content, .p{
-        font-size: 18px;
+        font-size: 20px;
     }
     
     .education-list , .li{
