@@ -47,7 +47,6 @@ nav ul {
 nav ul li {
     display: inline-block;
     margin-right: 20px;
-    
 }
 
 nav ul li a {
@@ -59,7 +58,6 @@ nav ul li a {
     padding: 10px 5px;
     border-radius: 5px;
     transition: background-color 0.3s ease;
-    
 }
 
 nav ul li a:hover {
@@ -72,12 +70,23 @@ nav ul li a:hover {
 }
 
 .titulo {
-    font-size: 24px;
+    font-size: 18px;
     color: #ffffff;
     margin-top: 5%;
     margin-bottom: 20px;
     letter-spacing: 2px;
     animation: fade-in 1.5s ease-out;
+    text-decoration: underline;
+}
+
+.titulo a {
+    color: #ffffff;
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+.titulo a:hover {
+    color: #086eba; /* Cor ao passar o mouse no link */
 }
 
 .conteudo {
@@ -101,12 +110,10 @@ nav ul li a:hover {
     margin-right: 10px; /* Espaço entre a imagem e o conteúdo */
 }
 
-
-
 .profile-img {
     border-radius: 0%;
-    width: 350px;
-    height: 175px;
+    width: 260px;
+    height: 160px;
     object-fit: cover;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
     border: 3px solid #ccc;
@@ -169,8 +176,6 @@ footer img:hover {
     transform: scale(1.2);
 }
 
-
-
 /* Media Query para telas menores */
 @media (max-width: 768px) {
     body {
@@ -186,18 +191,15 @@ footer img:hover {
     nav ul li {
         display: block;
         margin-bottom: 5px;
-        
     }
     
     nav ul li a {
-       
         font-size: 16px;
         font-weight: 600;
-    
     }
 
     .titulo {
-        font-size: 20px;
+        font-size: 17px;
     }
 
     .container {
@@ -212,8 +214,11 @@ footer img:hover {
     }
 
     .profile-img {
-        width: 100%;
-        height: auto;
+        width: 350px;
+        height: 200px;
+        object-fit: cover;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        border: 3px solid #ccc;
     }
 
     .introducao {
